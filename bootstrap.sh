@@ -46,13 +46,13 @@ ln -svf $HOME/.dotfiles/.wgetrc $HOME/.wgetrc
 
 # prompt the user to see if they want programs installed
 printf "\nPrograms List:\n"
-printf "curl, gcc, git, go, grep, gzip, lua, neofetch, net-tools, nmap, openssh, vim, wget\n"
+printf "curl, gcc, git, go, grep, gzip, lua, neofetch, net-tools, nmap, openssh, screen, vim, wget\n"
 printf "Would you like to install these programs using pacman? [y|N]: "
 read -n1 ans
 
 printf "\n"
 
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
-	sudo pacman -Syyu && sudo pacman -S curl gcc git go grep gzip lua neofetch net-tools nmap openssh vim wget
+	sudo pacman -Syyu && sudo pacman -S curl gcc git go grep gzip lua neofetch net-tools nmap openssh screen vim wget
 fi
 unset ans
