@@ -12,6 +12,8 @@ printf " +-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
 printf "Would you like to install xfce4 icons and themes? [y|N]: "
 read -n1 ans
 
+printf "\n"
+
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
 	ln -sv $HOME/.dotfiles/xfce4/.themes $HOME/.themes
 	ln -sv $HOME/.dotfiles/xfce4/.icons $HOME/.icons
@@ -50,3 +52,4 @@ printf "\n"
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
 	sudo pacman -Syyu && sudo pacman -S curl gcc git go grep gzip lua neofetch net-tools nmap openssh vim wget
 fi
+unset ans
