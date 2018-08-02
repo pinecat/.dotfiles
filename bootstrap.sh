@@ -42,7 +42,7 @@ ln -sv $HOME/.dotfiles/.screenrc $HOME/.screenrc
 # time to install programs
 
 # prompt the user to see if they want programs installed
-printf "Programs List:\n"
+printf "\nPrograms List:\n"
 printf "curl, gcc, git, go, grep, gzip, lua, neofetch, net-tools, nmap, openssh, vim, wget\n"
 printf "Would you like to install these programs using pacman? [y|N]: "
 read -n1 ans
