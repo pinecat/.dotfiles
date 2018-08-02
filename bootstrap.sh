@@ -17,6 +17,7 @@ printf "\n\n"
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
 	ln -svf $HOME/.dotfiles/xfce4/.themes $HOME/.themes
 	ln -svf $HOME/.dotfiles/xfce4/.icons $HOME/.icons
+	ln -svf $HOME/.dotfiles/.config/xfce4 $HOME/.config/xfce4
 fi
 unset ans
 
