@@ -15,29 +15,29 @@ read -n1 ans
 printf "\n\n"
 
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
-	ln -sv $HOME/.dotfiles/xfce4/.themes $HOME/.themes
-	ln -sv $HOME/.dotfiles/xfce4/.icons $HOME/.icons
+	ln -svf $HOME/.dotfiles/xfce4/.themes $HOME/.themes
+	ln -svf $HOME/.dotfiles/xfce4/.icons $HOME/.icons
 fi
 unset ans
 
 # we are going to setup symbolic links for all the files, and everything will just physically live in the .dotfiles folder in the home directory
 
 # link runcom dotfiles for shell
-ln -sv $HOME/.dotfiles/runcom/.bash_profile $HOME/.bash_profile
-ln -sv $HOME/.dotfiles/runcom/.bash_prompt $HOME/.bash_prompt
-ln -sv $HOME/.dotfiles/runcom/.bashrc $HOME/.bashrc
-ln -sv $HOME/.dotfiles/runcom/.aliases $HOME/.aliases
-ln -sv $HOME/.dotfiles/runcom/.exports $HOME/.exports
+ln -svf $HOME/.dotfiles/runcom/.bash_profile $HOME/.bash_profile
+ln -svf $HOME/.dotfiles/runcom/.bash_prompt $HOME/.bash_prompt
+ln -svf $HOME/.dotfiles/runcom/.bashrc $HOME/.bashrc
+ln -svf $HOME/.dotfiles/runcom/.aliases $HOME/.aliases
+ln -svf $HOME/.dotfiles/runcom/.exports $HOME/.exports
 
 # link ssh dotfiles
-ln -sv $HOME/.dotfiles/.ssh $HOME/.ssh
+ln -svf $HOME/.dotfiles/.ssh $HOME/.ssh
 
 # link vim dotfiles
-ln -sv $HOME/.dotfiles/.vim $HOME/.vim
-ln -sv $HOME/.dotfiles/.vimrc $HOME/.vimrc
+ln -svf $HOME/.dotfiles/.vim $HOME/.vim
+ln -svf $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
 # link screen dotfiles
-ln -sv $HOME/.dotfiles/.screenrc $HOME/.screenrc
+ln -svf $HOME/.dotfiles/.screenrc $HOME/.screenrc
 
 # time to install programs
 
