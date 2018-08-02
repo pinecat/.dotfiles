@@ -30,7 +30,7 @@ ln -sv $HOME/.dotfiles/runcom/.aliases $HOME/.aliases
 ln -sv $HOME/.dotfiles/runcom/.exports $HOME/.exports
 
 # link ssh dotfiles
-ln -sv $HOME/.dotifles/.ssh $HOME/.ssh
+ln -sv $HOME/.dotfiles/.ssh $HOME/.ssh
 
 # link vim dotfiles
 ln -sv $HOME/.dotfiles/.vim $HOME/.vim
