@@ -39,6 +39,9 @@ ln -svf $HOME/.dotfiles/.vimrc $HOME/.vimrc
 # link screen dotfiles
 ln -svf $HOME/.dotfiles/.screenrc $HOME/.screenrc
 
+# link wget dotfiles
+ln -svf $HOME/.dotfiles/.wgetrc $HOME/.wgetrc
+
 # time to install programs
 
 # prompt the user to see if they want programs installed
