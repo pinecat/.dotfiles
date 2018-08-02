@@ -46,6 +46,8 @@ printf "curl, gcc, git, go, grep, gzip, lua, neofetch, net-tools, nmap, openssh,
 printf "Would you like to install these programs using pacman? [y|N]: "
 read -n1 ans
 
+printf "\n"
+
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
 	sudo pacman -Syyu && sudo pacman -S curl gcc git go grep gzip lua neofetch net-tools nmap openssh vim wget
 fi
