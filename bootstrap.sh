@@ -12,7 +12,7 @@ printf " +-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
 printf "Would you like to install xfce4 icons and themes? [y|N]: "
 read -n1 ans
 
-printf "\n"
+printf "\n\n"
 
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
 	ln -sv $HOME/.dotfiles/xfce4/.themes $HOME/.themes
