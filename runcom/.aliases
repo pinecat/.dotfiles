@@ -13,4 +13,4 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 # ls color
-alias ls='ls --color=autor'
+alias ls='ls --color=auto'
