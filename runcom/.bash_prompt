@@ -29,4 +29,4 @@ fi;
 #export PS2;
 
 # set the terminal title and prompt
-PS1='\e[0;32m[\e[0;31m\u\e[0;35m@\e[0;32m\h \e[0;34m\W\e[0;32m]\e[m$ '
+PS1='\e[0;32m[\e[0;31m\u\e[0;35m@\e[0;32m\h \e[0;34m\W\e[0;32m]\e[0;36m$\e[m '
