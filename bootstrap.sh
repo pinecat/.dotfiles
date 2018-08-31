@@ -8,18 +8,7 @@ printf " +-+-+-+-+-+-+-+-+-+-+-+-+\n"
 printf " |b|o|o|t|s|t|r|a|p|p|e|r|\n"
 printf " +-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
 
-# prompt for xfce4 themes and icons
-printf "Would you like to install xfce4 icons and themes? [y|N]: "
-read -n1 ans
-
-printf "\n\n"
-
-if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
-	ln -svf $HOME/.dotfiles/xfce4/.themes $HOME/.themes
-	ln -svf $HOME/.dotfiles/xfce4/.icons $HOME/.icons
-	ln -svf $HOME/.dotfiles/.config/xfce4 $HOME/.config/xfce4
-fi
-unset ans
+# we are no longer prompting for xfce4 stuff
 
 # we are going to setup symbolic links for all the files, and everything will just physically live in the .dotfiles folder in the home directory
 
