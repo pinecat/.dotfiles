@@ -10,4 +10,5 @@ export LESS_TERMCAP_md="${green}";
 
 # export go paths
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
